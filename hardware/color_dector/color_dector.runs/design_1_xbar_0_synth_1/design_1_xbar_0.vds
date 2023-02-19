@@ -1,0 +1,403 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov 22 17:15:02 2022
+# Process ID: 6741
+# Current directory: /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1
+# Command line: vivado -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+# Log file: /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
+# Journal file: /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/vivado.jou
+# Running On: andy-ROG-Zephyrus-G14-GA401QM-GA401QM, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 16, Host memory: 16147 MB
+#-----------------------------------------------------------
+source design_1_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+Command: synth_design -top design_1_xbar_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6884
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2444.453 ; gain = 370.770 ; free physical = 198 ; free virtual = 4775
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3449.793; parent = 2451.395; children = 998.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_crossbar_sasd' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_addr_decoder' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_addr_decoder' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_decerr_slave' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_decerr_slave' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_addr_arbiter_sasd' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_addr_arbiter_sasd' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_splitter' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_splitter' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_splitter__parameterized0' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_splitter__parameterized0' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_crossbar_sasd' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_0_mux_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_28_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_28_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2627.359 ; gain = 553.676 ; free physical = 712 ; free virtual = 5181
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3625.762; parent = 2627.363; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2645.172 ; gain = 571.488 ; free physical = 701 ; free virtual = 5170
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3643.574; parent = 2645.176; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2645.172 ; gain = 571.488 ; free physical = 696 ; free virtual = 5166
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3643.574; parent = 2645.176; children = 998.398
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2645.172 ; gain = 0.000 ; free physical = 681 ; free virtual = 5150
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2775.922 ; gain = 0.000 ; free physical = 678 ; free virtual = 5148
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2775.922 ; gain = 0.000 ; free physical = 671 ; free virtual = 5143
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 603 ; free virtual = 5107
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 606 ; free virtual = 5110
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 602 ; free virtual = 5107
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 554 ; free virtual = 5063
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 425 ; free virtual = 4939
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1684.340; parent = 1544.890; children = 139.450
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 343 ; free virtual = 4791
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1767.420; parent = 1625.327; children = 142.093
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 333 ; free virtual = 4776
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1770.669; parent = 1628.576; children = 142.093
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 282 ; free virtual = 4725
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1772.024; parent = 1629.932; children = 142.093
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 670 ; free virtual = 5118
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.628; parent = 1632.934; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 670 ; free virtual = 5118
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.644; parent = 1632.949; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 737 ; free virtual = 5186
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.659; parent = 1632.965; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 806 ; free virtual = 5254
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.659; parent = 1632.965; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 916 ; free virtual = 5365
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.659; parent = 1632.965; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 976 ; free virtual = 5430
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.659; parent = 1632.965; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     9|
+|3     |LUT3 |     4|
+|4     |LUT4 |    64|
+|5     |LUT5 |    18|
+|6     |LUT6 |    53|
+|7     |FDRE |   130|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 974 ; free virtual = 5446
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1778.659; parent = 1632.968; children = 145.694
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3742.309; parent = 2743.910; children = 998.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2775.922 ; gain = 571.488 ; free physical = 1359 ; free virtual = 5856
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2775.922 ; gain = 702.238 ; free physical = 2988 ; free virtual = 7485
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2775.922 ; gain = 0.000 ; free physical = 3491 ; free virtual = 7987
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2775.922 ; gain = 0.000 ; free physical = 3436 ; free virtual = 7933
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7be1a0c
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2775.922 ; gain = 1012.574 ; free physical = 3638 ; free virtual = 8137
+INFO: [Common 17-1381] The checkpoint '/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 590721f3cef116d6
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/hardware/color_dector/color_dector.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 22 17:15:38 2022...

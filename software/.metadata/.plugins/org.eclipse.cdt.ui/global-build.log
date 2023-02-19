@@ -1,0 +1,16 @@
+Nothing to build in platform 'design_1_wrapper'
+
+18:10:15 **** Incremental Build of configuration Debug for project color_sensor_sw ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+18:10:16 **** Build of configuration Debug for project color_sensor_sw_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/color_sensor_sw_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/color_sensor_sw_system/Debug/system.bif --bitstream /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/color_sensor_sw/_ide/bitstream/design_1_wrapper.bit --elf /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/color_sensor_sw/Debug/color_sensor_sw.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/color_sensor_sw/_ide/bitstream/design_1_wrapper.bit
+Running /opt/Xilinx/Vitis/2022.2/bin/bootgen  -image /home/andy/Documents/ece_520/fa22-ece520-final-project-alopez099/software/color_sensor_sw_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

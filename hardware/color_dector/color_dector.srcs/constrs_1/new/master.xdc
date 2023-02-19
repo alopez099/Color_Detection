@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN U14 [get_ports Pmod_out_0_pin7_io]
+set_property PACKAGE_PIN U15 [get_ports Pmod_out_0_pin8_io]
+set_property PACKAGE_PIN V17 [get_ports Pmod_out_0_pin9_io]
+set_property PACKAGE_PIN V18 [get_ports Pmod_out_0_pin10_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin7_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin8_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin9_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin10_io]

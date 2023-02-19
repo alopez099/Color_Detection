@@ -1,0 +1,10 @@
+18:10:15 **** Incremental Build of configuration Debug for project color_sensor_sw ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+18:10:15 Build Finished (took 164ms)
+
