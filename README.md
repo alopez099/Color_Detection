@@ -3,6 +3,12 @@
 
 Implemented a SoC style integrated Processing System (PS) and a Programmable Logic (PL) to record object color data. Used for Object Detection. 
 
+|Color Sensor Detection|
+|:---:|
+|![Screenshot 2023-02-20 012543](https://user-images.githubusercontent.com/60726311/220070060-f9ed4b51-14c4-468d-bb7c-4110343ee925.png)|
+
+
+
 ## Features
 
 - Set Pmod communication with Zybo via I²C protocol with ADC conversion for enhancing data acquisition & control systems
