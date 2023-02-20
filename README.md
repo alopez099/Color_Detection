@@ -11,8 +11,10 @@ Implemented a SoC style integrated Processing System (PS) and a Programmable Log
 - Implemented Python scripting with Pygame and Pyserial to create a user-friendly GUI that streamlines the transmission of data between the Zybo FPGA and the COLOR Pmod, making it easy for users to extract and analyze color data with precision and speed
 
 ## Documentation
+Theory:
+The Digilent Pmod COLOR is a color sensor module with the ability to sense red, green, blue and clear light. The onboard AMS's TCS3472 integrates an IR blocking filter to accurately determine the color of objects as well as sense ambient light under varying lighting conditions and through attenuating materials
 
-
+![Picture1](https://user-images.githubusercontent.com/60726311/220038156-3598a782-3082-4918-8047-ad08aaaa5fa8.png)
 
 
 ## Demo
